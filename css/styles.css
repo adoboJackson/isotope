@@ -1,0 +1,64 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.employee:hover .front {
+  z-index: 0;
+  -webkit-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+
+.employee:hover .back {
+  z-index: 3;
+  -webkit-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+
+.employee {
+  position: relative;
+  float: left;
+  width: 400px;
+  height: 200px;
+  margin: 5px;
+  color: #FFF;
+  font-family: 'Oswald', 'sans-serif';
+}
+
+.employee a {
+  color: white;
+  text-decoration: none;
+}
+
+.employee div {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-backface-visibility: hidden;
+  /*hide the card that is behind (3D API)*/
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding: 10px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.employee img {
+  float: right;
+}
+
+.employee .front {
+  background: #034980;
+  z-index: 3;
+  /* put "front" content above flipped back content */
+}
+
+.employee .back {
+  background: #1b70e0;
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}

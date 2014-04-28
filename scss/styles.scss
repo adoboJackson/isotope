@@ -1,0 +1,52 @@
+*{
+	box-sizing: border-box;
+}
+$shade1: #034980;
+$shade2: #055DA1;
+$shade3: #1B70E0;
+$shade4: #4A95F7;
+.employee:hover{
+	.front {
+		z-index: 0;
+		transform: rotateY(-180deg);
+	}
+	.back {
+		z-index: 3;
+		transform: rotateY(0deg);
+	}
+	
+}
+.employee{
+    position: relative;
+	float: left;
+	width: 400px;
+	height: 200px;
+	margin: 5px;
+	color: #FFF;
+	font-family: 'Oswald', 'sans-serif';
+	a{
+		color: white;
+		text-decoration: none;
+	}
+	div{
+		transition: all 0.5s;
+		-webkit-backface-visibility: hidden;/*hide the card that is behind (3D API)*/
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		padding: 10px;
+		overflow: hidden;
+		border-radius: 5px;
+	}
+	img{
+		float: right;
+	}
+	.front {
+		background: $shade1;
+	  	z-index: 3;/* put "front" content above flipped back content */
+	}
+	.back {
+		background: $shade3;
+		transform: rotateY(180deg);
+	}
+}
