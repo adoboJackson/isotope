@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+  body {
+     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+     font-weight: 300;
+  }
+  .employee {
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    padding: 10px;
+    background: #888;
+    color: #FFF;
+  }
+
+  </style>
+</head>
+<body class="filtering-page" data-page="filtering">
+  <div id="content">
+  <div id="filtering-demo" class="demo">
+    <nav id="filters" class="button-group js-radio-button-group">
+    <button class="button is-checked" data-filter="*">show all</button> 
+    <button class="button" data-filter=".marketing">marketing</button>
+    <button class="button" data-filter=".emedia">emedia</button>
+    <button class="button" data-filter="name">name ends with &ndash;do</button>
+  </nav>
+  <div class="isotope">
+      <div class="employee marketing" data-category="marketing">
+        <h3 class="name">Tracy Martell</h3>
+        <p class="email"><a href='mailto:nbernardo@maddenmedia.com'>nbernardo@maddenmedia.com</a></p>
+        <p class="number">1</p>
+      </div>
+      <div class="employee marketing" data-category="marketing">
+        <h3 class="name">Jenn Smith</h3>
+        <p class="email"><a href='mailto:nbernardo@maddenmedia.com'>nbernardo@maddenmedia.com</a></p>
+        <p class="number">2</p>
+      </div>
+      <div class="employee marketing" data-category="marketing">
+        <h3 class="name">Vanessa Koza</h3>
+        <p class="email"><a href='mailto:nbernardo@maddenmedia.com'>nbernardo@maddenmedia.com</a></p>
+        <p class="number">3</p>
+      </div>
+      <div class="employee emedia" data-category="emedia">
+        <h3 class="name">Neil Bernardo</h3>
+        <p class="email"><a href='mailto:nbernardo@maddenmedia.com'>nbernardo@maddenmedia.com</a></p>
+        <p class="number">4</p>
+      </div>
+    
+  </div><!-- end .isotope -->
+</div><!-- end #content -->
+
+  <!-- Isotope does NOT require jQuery. But it does make things easier -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="bower_components/jquery/jquery.min.js"><\/script>')</script>
+
+  <!-- DEV MODE - including each .js file -->
+    <script src="bower_components/classie/classie.js"></script>
+  
+    <script src="bower_components/eventie/eventie.js"></script>
+  
+    <script src="bower_components/doc-ready/doc-ready.js"></script>
+  
+    <script src="bower_components/get-style-property/get-style-property.js"></script>
+  
+    <script src="bower_components/get-size/get-size.js"></script>
+  
+    <script src="bower_components/eventEmitter/EventEmitter.js"></script>
+  
+    <script src="bower_components/imagesloaded/imagesloaded.js"></script>
+  
+    <script src="bower_components/jquery-bridget/jquery.bridget.js"></script>
+  
+    <script src="bower_components/matches-selector/matches-selector.js"></script>
+  
+    <script src="bower_components/outlayer/item.js"></script>
+  
+    <script src="bower_components/outlayer/outlayer.js"></script>
+  
+    <script src="bower_components/masonry/masonry.js"></script>
+  
+    <script src="bower_components/isotope/js/item.js"></script>
+  
+    <script src="bower_components/isotope/js/layout-mode.js"></script> 
+  
+    <script src="bower_components/isotope/js/isotope.js"></script>
+  
+    <script src="bower_components/isotope/js/layout-modes/vertical.js"></script>
+  
+    <script src="bower_components/isotope/js/layout-modes/fit-rows.js"></script>
+  
+    <script src="bower_components/isotope/js/layout-modes/masonry.js"></script>
+  
+    <script src="bower_components/isotope-cells-by-column/cells-by-column.js"></script>
+  
+    <script src="bower_components/isotope-cells-by-row/cells-by-row.js"></script>
+  
+    <script src="bower_components/isotope-fit-columns/fit-columns.js"></script>
+  
+    <script src="bower_components/isotope-horizontal/horizontal.js"></script>
+  
+    <script src="js/vendor/highlight.pack.js"></script>
+  
+    <script src="js/controller.js"></script>
+  
+    <script src="js/pages/directory.js"></script>
+</body>
+</html>
